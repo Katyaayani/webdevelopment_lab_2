@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conference Registration Form</title>
+</head>
+<body>
+<h2>Conference Registration Form</h2>
+<form action="#" method="post">
+    <label for="fullname">Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required><br><br>
+    
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email address" required><br><br>
+    
+    <label for="age">Age (18-99):</label><br>
+    <input type="number" id="age" name="age" min="18" max="99" placeholder="18" required><br><br>
+    
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label><br><br>
+    
+    <label for="country">Country:</label><br>
+    <select id="country" name="country" required>
+        <option value="" disabled selected>Select your country</option>
+        <option value="Afghanistan">Afghanistan</option>
+        <option value="Albania">Albania</option>
+        <option value="Australia">Australia</option>
+        <option value="Belgium">Belgium</option>
+        <option value="China">Chine</option>
+        <option value="Denmark">Denmark</option>
+        <option value="England">England</option>
+        <option value="Finland">Finland</option>
+        <option value="Indonesia">Indonesia</option>
+        <option value="Malaysia">Malaysia</option>
+        <option value="Singapore">Singapore</option>
+        <option value="India">India</option>
+        <!-- Add more options as needed -->
+    </select><br><br>
+    
+    <label for="interest">Area of Interest:</label><br>
+    <select id="interest" name="interest" required>
+        <option value="" disabled selected>Select your area of interest</option>
+        <option value="Software Development">Technology</option>
+        <option value="Data Science">Business</option>
+        <option value="Cybersecurity">Science</option>
+        <option value="Artificial Intelligence">Art</option>
+        <option value="Web Development">Health</option>
+        <!-- Add more options as needed -->
+    </select><br><br>
+    
+    <label for="experience">Experience Level:</label><br>
+    <input type="radio" id="beginner" name="experience" value="beginner" required>
+    <label for="beginner">Beginner</label><br>
+    <input type="radio" id="intermediate" name="experience" value="intermediate">
+    <label for="intermediate">Intermediate</label><br>
+    <input type="radio" id="advanced" name="experience" value="advanced">
+    <label for="advanced">Advanced</label><br><br>
+    
+    <label for="Comments or Questions">Comments or Questions:</label><br>
+    <textarea id="Comments or Questions" name="Comments or Questions" rows="4" cols="50" placeholder="Any comments or questions" ></textarea><br><br>
+    
+    <input type="submit" value="Register">
+    <input type="reset" value="Reset">
+</form>
+</body>
+</html>
